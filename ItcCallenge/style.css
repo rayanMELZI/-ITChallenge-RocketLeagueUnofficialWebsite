@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 72);
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* NAV BAR */
+.navbar {
+  background-color: #5555;
+  color: #ffff;
+  font-weight: bold;
+  height: 70px;
+  width: 100vw;
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.navbar > .logo {
+  width: 200px;
+  padding-left: 100px;
+  padding-right: 15px;
+  position: relative;
+  right: 100px;
+  height: 100%;
+  background-color: rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-45deg);
+}
+.navbar > .logo > img {
+  transform: skew(45deg);
+}
+
+.navbar > ul {
+  width: 830px;
+  position: relative;
+  right: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.navbar li {
+  list-style-type: none;
+  cursor: pointer;
+  height: 100%;
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar li:hover {
+  height: 54px;
+  width: 80px;
+  border: solid 8px transparent;
+  border-bottom: solid 8px rgb(255, 128, 0);
+}
+
+.navbar > .profile {
+  cursor: pointer;
+  height: 55%;
+}
+.navbar > .profile > img {
+  height: 100%;
+  border-radius: 100px;
+  display: none;
+}
+.navbar .not-connected {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+  position: relative;
+  right: 50px;
+  /* display: none; */
+}
+.navbar .not-connected > button {
+  height: 100%;
+  width: 100px;
+  border-radius: 10px;
+  color: #ffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+.navbar .not-connected > button:hover {
+  transition: all 0.3s;
+}
+.navbar .not-connected > .Login {
+  background-color: rgb(255, 128, 0);
+}
+.navbar .not-connected > .Login:hover {
+  background-color: rgb(255, 128, 0, 0.7);
+}
+.navbar .not-connected > .Sign-in {
+  background-color: rgb(0, 110, 255);
+}
+.navbar .not-connected > .Sign-in:hover {
+  background-color: rgba(0, 110, 255, 0.6);
+}
+
+/* END OF NAVBAR */
